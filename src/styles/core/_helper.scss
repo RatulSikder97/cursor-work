@@ -1,0 +1,11 @@
+.custom-container {
+    max-width: 1170px;
+
+    @include sc1200 {
+        max-width: 960px;
+    }
+
+    @include sc992 {
+        max-width: unset;
+    }
+}
