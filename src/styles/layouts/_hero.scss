@@ -1,0 +1,46 @@
+.hero-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 915px;
+    z-index: -1;
+    background: url('/src/assets/images/hero-banner.svg') top left no-repeat;
+
+    .content {
+        position: absolute;
+        top: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        color: #fff;
+
+        h1 {
+            font-weight: 500;
+            font-size: 50px;
+            line-height: 70px;
+        }
+
+        h4 {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            max-width: 510px;
+            margin: 30px auto;
+        }
+        
+
+        button {
+            width: 320px;
+            height: 70px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            border-radius: 80px;
+            text-transform: uppercase;
+        }
+    }
+
+
+}

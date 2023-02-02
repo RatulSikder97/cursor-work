@@ -1,0 +1,15 @@
+.btn {
+    padding: 8px 12px;
+    background-color: #b1b1b1;
+    border-radius: 24px;
+    cursor: pointer;
+
+    &-accent {
+        background-color: $accentColor;
+        color: #fff;
+
+        &:hover {
+            filter: drop-shadow(0 0 5px $accentColor);
+        }
+    }
+}
