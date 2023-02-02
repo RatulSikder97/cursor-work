@@ -20,6 +20,46 @@
                     color: #fff;
                     display: inline-block;
                     padding: 14px 24px;
+                    position: relative;
+                    transition: width 0.5s;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 0;
+                        height: 4px;
+                        background-color: #fff;
+                        left:  24px;
+                        bottom: 4px;
+                        border-radius: 24px;
+                        transition: width 0.5s;
+                    }
+
+                    &:hover {
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            width: 24px;
+                            height: 4px;
+                            background-color: #fff;
+                            left:  24px;
+                            bottom: 4px;
+                            border-radius: 24px;
+                        }
+                    }
+
+                    &.active {
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            width: 24px;
+                            height: 4px;
+                            background-color: #fff;
+                            left:  24px;
+                            bottom: 4px;
+                            border-radius: 24px;
+                        }
+                    }
 
                     &.btn {
                         color: $primaryColor;
