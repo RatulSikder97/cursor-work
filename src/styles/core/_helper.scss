@@ -1,5 +1,6 @@
 .custom-container {
     max-width: 1170px;
+    margin: auto;
 
     @include sc1200 {
         max-width: 960px;
