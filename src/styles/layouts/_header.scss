@@ -4,5 +4,29 @@
 
     & > div {
         height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    nav {
+        margin-left: auto;
+
+        ul  {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            li {
+                a {
+                    color: #fff;
+                    display: inline-block;
+                    padding: 14px 24px;
+
+                    &.btn {
+                        color: $primaryColor;
+                        margin-left: 26px;
+                    }
+                }
+            }
+        }
     }
 }
