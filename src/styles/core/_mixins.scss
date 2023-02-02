@@ -1,0 +1,35 @@
+@mixin sc1400 {
+    @media (max-width: 1400px) {
+        @content;
+    }
+}
+
+@mixin sc1200 {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin sc992 {
+    @media (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin sc768 {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin sc425 {
+    @media (max-width: 425px) {
+        @content;
+    }
+}
+
+@mixin sc360 {
+    @media (max-width: 360px) {
+        @content;
+    }
+}
