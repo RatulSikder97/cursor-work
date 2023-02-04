@@ -2,7 +2,6 @@
     position: relative;
     top: -100px;
     height: 915px;
-    z-index: -1;
     background: url('/src/assets/images/hero-banner.svg') top left no-repeat;
 
     .content {
@@ -40,6 +39,10 @@
             text-transform: uppercase;
             margin-top: 44px;
             background: linear-gradient(45deg,  $accentColor,  #81fa77);
+
+            &:hover {
+                filter: drop-shadow(0 1px 5px $accentColor);
+            }
         }
     }
 
