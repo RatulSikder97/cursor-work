@@ -41,6 +41,11 @@ footer {
                 color: #B1B1E7;
                 margin: 10px 0;
 
+                &:hover,
+                &:focus {
+                    border-color: #fff;
+                }
+
                 &::placeholder {
                     color: #B1B1E7 !important;
                 }
