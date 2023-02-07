@@ -1,0 +1,63 @@
+footer {
+    height: 600px;
+    margin-top: 320px;
+    background-color: #07112D;
+    position: relative;
+
+    .contact {
+        width: 1110px;
+        height: 420px;
+        padding: 60px;
+        background: linear-gradient(90deg, #301CAB 0.76%, #5671F7 100%);
+        border-radius: 10px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+
+        .header {
+            text-align: center;
+
+            .title {
+                font-size: 30px;
+                margin-bottom: 1rem;
+            }
+
+        }
+
+        .content {
+            margin-top: 30px;
+
+            input {
+                display: block;
+                padding: 16px;
+                border: unset;
+                border-bottom: 1px solid #8798F6;
+                outline: none;
+                background: transparent;
+                resize: none;
+                width: 100%;
+                color: #B1B1E7;
+                margin: 10px 0;
+
+                &::placeholder {
+                    color: #B1B1E7 !important;
+                }
+            }
+
+            .input-group {
+                display: flex;
+                gap: 30px;
+            }
+
+            button {
+                width: 200px;
+                height: 50px;
+                margin-top: 30px;
+                font-size: 18px;
+            }
+
+        }
+    }
+}

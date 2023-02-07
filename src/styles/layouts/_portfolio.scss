@@ -1,9 +1,10 @@
 .portfolio-section {
     padding: 80px 0;
+    position: relative;
 
     .bg {
-        height: 440px;
         position: relative;
+        height: 440px;
 
         img {
             width: 100%;
@@ -25,5 +26,14 @@
 
     .content {
         height: 390px;
+        position: absolute;
+        bottom: 80px;
+
+        .work-card {
+            height: 390px;
+            width: 390px;
+            background: #fff;
+            border-radius: 8px;
+        }
     }
 }
