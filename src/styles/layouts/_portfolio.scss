@@ -1,0 +1,29 @@
+.portfolio-section {
+    padding: 80px 0;
+
+    .bg {
+        height: 440px;
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        .title {
+            color: #fff;
+            font-size: 60px;
+            position: absolute;
+            top: 80px;
+            left: 15%;
+
+            @include sc1200 {
+                top: 60px;
+            }
+        }
+    }
+
+
+    .content {
+        height: 390px;
+    }
+}

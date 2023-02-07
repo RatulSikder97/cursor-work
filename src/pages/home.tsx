@@ -4,6 +4,7 @@ import Hero from '../components/Hero';
 import Service from '../components/Service';
 import Specialization from '../components/Specialization';
 import WorkProcess from '../components/WorkProcess';
+import Portfolio from '../components/Portfolio';
 const home = () => {
   return (
     <>
@@ -12,6 +13,7 @@ const home = () => {
       <Service />
       <Specialization />
       <WorkProcess />
+      <Portfolio />
     </>
   )
 }
