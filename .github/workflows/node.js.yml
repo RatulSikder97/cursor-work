@@ -1,0 +1,45 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout to Branch
+        uses: actions/checkout@master
+      - name: Install Dependencies
+        uses: yarn 
+      - name: Build Project
+        uses: yarn build
+      - name: Activate Artifact
+        uses: actions/upload-artifact@master
+        with:
+          name: dist
+          path: dist
+  
+  deploy:
+    name: Deploy to Live
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+      - name: Download Artifact
+        uses: actions/download-artifact@master
+        with:
+          name: dist
+          path: dist
+      - name: Sync file to CPanel
+        uses: SamKirkland/FTP-Deploy-Action@4.1.0
+        with:
+          server: ftp.fitwithtech.com
+          username: fitwozbj
+          password: ${{ secrets.C_FTP_PASSWORD}}
+          local-dir: ./dist/
+          server-dir: ./
