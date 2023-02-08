@@ -38,8 +38,8 @@ jobs:
       - name: Sync file to CPanel
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
         with:
-          server: ftp.fitwithtech.com
-          username: fitwozbj
+          server: ${{ secrets.C_SERVER}}
+          username: ${{ secrets.C_USR_NAME}}
           password: ${{ secrets.C_FTP_PASSWORD}}
           local-dir: ./dist/
           server-dir: ./
