@@ -42,4 +42,4 @@ jobs:
           username: ${{ secrets.C_USR_NAME}}
           password: ${{ secrets.C_FTP_PASSWORD}}
           local-dir: ./dist/
-          server-dir: ./
+          server-dir: /
